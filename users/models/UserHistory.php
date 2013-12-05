@@ -1,7 +1,7 @@
 <?php
 /** @TableAlias('uh') @TableName('user_history') */
 class UserHistory extends SSqlModel{
-	const CREATE=01, DELETE=02, UPDATE=03, CONNECT=05, LOST_PWD=06, CHANGE_PWD=07, VALID_USER=08, DISABLE_USER=09,
+	const CREATE=1, DELETE=2, UPDATE=3, CONNECT=5, LOST_PWD=6, CHANGE_PWD=7, VALID_USER=8, DISABLE_USER=9,
 		CHANGE_EMAIL=10, VALID_CHANGE_EMAIL=11, CANCEL_CHANGE_EMAIL=12 ;
 	public
 		/** @Pk @AutoIncrement @SqlType('int(10) unsigned') @NotNull
